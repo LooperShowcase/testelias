@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <button onclick="speak();">Init audio</button> // This button says Hello
+    World ans is used to initialize the audio library in the website
+
+    <div class="container">
+      <h1>Voice Assistant</h1>
+      <form
+        onsubmit="event.preventDefault(); // This so that the website doesn't refresh when we click submit
+conversationUserAdd(document.getElementById('input-text').value); // Add the user input to the conversation history
+openai_test();"
+      >
+        // Call GPT
+        <input type="text" id="input-text" placeholder="Say Something..." />
+        <button id="submit-button">Submit</button>
+      </form>
+
+      <div id="chat-container"></div>
+    </div>
+  </body>
+</html>
